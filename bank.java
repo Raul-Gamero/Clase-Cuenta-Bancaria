@@ -1,4 +1,4 @@
-public static void main(sring[] args) {
+public static void main(String[] args) {
 
     Scanner sc = new scanner(System.in);
     String nombre, numero;
@@ -130,7 +130,7 @@ public class Cuenta {
         return tipoInteres;
     }
 
-    public void setTipoInteres(double saldo) {
+    public void setTipoInteres(double tipoInteres) {
         this.tipoInteres = tipoInteres;
     }
 
@@ -155,7 +155,7 @@ public class Cuenta {
     public boolean reintegro(double importe) {
         if (importe > 0 && this.saldo >= importe) {
             this.saldo -= importe;
-            return true
+            return true;
         }
         return false;
     }
